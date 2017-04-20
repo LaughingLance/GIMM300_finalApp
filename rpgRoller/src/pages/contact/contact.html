@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Character
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <ion-label floating>Character Name</ion-label>
+    <ion-input type="text" [value]="nameCharacter" [(ngModel)]="nameCharacter">{{ this.nameCharacter }}</ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Strength Modifier</ion-label>
+    <ion-input type="number" [value]="scoreStr" [(ngModel)]="scoreStr">{{ this.scoreStr }}</ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Dexterity Modifier</ion-label>
+    <ion-input type="number" [value]="scoreDex" [(ngModel)]="scoreDex">{{ this.scoreDex }}</ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Constitution Modifier</ion-label>
+    <ion-input type="number" [value]="scoreCon" [(ngModel)]="scoreCon">{{ this.scoreCon }}</ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Intelligence Modifier</ion-label>
+    <ion-input type="number" [value]="scoreInt" [(ngModel)]="scoreInt">{{ this.scoreInt }}</ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Wisdom Modifier</ion-label>
+    <ion-input type="number" [value]="scoreWis" [(ngModel)]="scoreWis">{{ this.scoreWis }}</ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Charisma Modifier</ion-label>
+    <ion-input type="number" [value]="scoreCha" [(ngModel)]="scoreCha">{{ this.scoreCha }}</ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Weapon 1</ion-label>
+    <ion-input type="text" [value]="weapon1" [(ngModel)]="weapon1">{{ this.weapon1 }}</ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Weapon 2</ion-label>
+    <ion-input type="text" [value]="weapon2" [(ngModel)]="weapon2">{{ this.weapon2 }}</ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Weapon 3</ion-label>
+    <ion-input type="text" [value]="weapon3" [(ngModel)]="weapon3">{{ this.weapon3 }}</ion-input>
+</ion-item>
+<br />
+<button ion-button small block (click)="setData()">Update</button>
+
+</ion-content>

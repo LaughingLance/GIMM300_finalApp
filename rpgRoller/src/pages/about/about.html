@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      ROLL
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+<p align="center" class="score">D20 Roll: {{ d20Roll }} &nbsp; &nbsp; With Modifier: {{ finalRoll }}</p>
+<p align="center">Initiative</p>
+<button ion-button small block (click)="getData('myDex')">Initiative</button>
+<p align="center">Saves</p>
+<div align="center">
+<button ion-button small (click)="getData('myStr')">Strength</button>
+<button ion-button small (click)="getData('myDex')">Dexterity</button>
+</div>
+<div align="center">
+<button ion-button small (click)="getData('myCon')">Constitution</button>
+<button ion-button small (click)="getData('myInt')">Intelligence</button>
+</div>
+<div align="center">
+<button ion-button small (click)="getData('myWis')">Wisdom</button>
+<button ion-button small (click)="getData('myCha')">Charisma</button>
+</div>
+<p align="center" class="score">Attack Roll: {{ finalAttack }} &nbsp; &nbsp; Damage: {{ weaponDamage }}</p>
+<div align="center">
+<button ion-button small (click)="maulAttack('myStr')">{{ weapon1 }}</button>
+<button ion-button small (click)="scimitarAttack('myStr')">{{ weapon2 }}</button>
+<button ion-button small (click)="crossbowAttack('myDex')">{{ weapon3 }}</button>
+</div>
+</ion-content>
